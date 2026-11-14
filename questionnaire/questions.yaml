@@ -1,0 +1,1067 @@
+title: Style Guide Questionnaire for Internal Teams
+license: CC BY-SA 4.0
+author: Katrina Moody
+parts:
+- id: A
+  title: Setup
+  questions:
+  - id: A1
+    title: Your team or company name
+    feeds:
+    - '03'
+    - '06'
+    why: Your own name is the word your docs use most. If it's written three different ways, readers notice. In internal docs, those readers are also writers. They'll copy the mistake into everything they write, inside and outside the company.
+    fields:
+    - prompt: Name
+      type: text
+      id: A1
+      token: '[Company]'
+    - prompt: Common mistakes to avoid (for example, "Acme inc," "ACME," or "AcmeCo")
+      type: text
+      id: A1b
+  - id: A2
+    title: Style guide owner
+    feeds:
+    - '03'
+    - '12'
+    why: A guide with no owner goes stale. A name (or a role, if people change) gives questions somewhere to go.
+    fields:
+    - prompt: Name / role
+      type: text
+      id: A2
+    - prompt: Best way to reach them (for example, email or a Slack channel)
+      type: text
+      id: A2b
+  - id: A3
+    title: Who decides, and by when
+    feeds:
+    - '12'
+    notes:
+    - The target date is for your planning. It won't appear in the guide.
+    why: Style guides stall when everyone has an opinion and no one has the final word. Set a date for a "good enough" first version. You'll improve it later.
+    fields:
+    - prompt: People helping make decisions
+      type: text
+      id: A3
+    - prompt: Final sign-off
+      type: text
+      id: A3b
+    - prompt: Target date for the first version
+      type: text
+      id: A3c
+  - id: A4
+    title: Where your docs live
+    feeds:
+    - '04'
+    - '05'
+    why: Your tools change the rules. For example, Confluence can show an inline link with the page's icon and title, and some teams prefer that format for every link. If your docs live in several places, the template's Documentation Map (§05) helps everyone find the right one.
+    fields:
+    - prompt: 'Check all that apply:'
+      type: multi
+      options:
+      - value: confluence
+        label: Confluence
+      - value: notion
+        label: Notion
+      - value: google-docs-google-drive
+        label: Google Docs / Google Drive
+      - value: microsoft-word-sharepoint-onedrive
+        label: Microsoft Word / SharePoint / OneDrive
+      - value: github-gitlab-or-other-markdown-files
+        label: GitHub, GitLab, or other Markdown files
+      - value: slack-or-teams-channels-pinned-posts-can
+        label: Slack or Teams channels (pinned posts, canvases)
+      - value: wordpress-or-another-cms
+        label: WordPress or another CMS
+      allow_other: true
+      id: A4
+    - prompt: Which one is the **source of truth** when docs disagree?
+      type: text
+      id: A4b
+  - id: A5
+    title: What this guide will cover
+    feeds:
+    - '03'
+    - '05'
+    why: Scope keeps the guide focused. Anything not on this list doesn't have to follow the guide, which saves arguments later.
+    fields:
+    - prompt: 'Check all that apply:'
+      type: multi
+      options:
+      - value: internal-knowledge-base-help-articles
+        label: Internal knowledge base / help articles
+      - value: processes-and-procedures-sops
+        label: Processes and procedures (SOPs)
+      - value: onboarding-docs
+        label: Onboarding docs
+      - value: reports
+        label: Reports
+      - value: company-project-or-team-updates
+        label: Company, project, or team updates
+      - value: meeting-notes-and-decisions
+        label: Meeting notes and decisions
+      allow_other: true
+      id: A5
+  - id: A6
+    title: Doc types you write most
+    feeds:
+    - '05'
+    why: The template includes a starter skeleton for each doc type. Your top three get the most attention.
+    fields:
+    - prompt: 'Check up to three:'
+      type: multi
+      options:
+      - value: how-to-step-by-step-guides
+        label: How-to / step-by-step guides
+      - value: reference-settings-specs-policies
+        label: Reference (settings, specs, policies)
+      - value: troubleshooting
+        label: Troubleshooting
+      - value: faqs
+        label: FAQs
+      - value: process-sop
+        label: Process / SOP
+      - value: explainers-concepts-how-this-works
+        label: Explainers (concepts, "how this works")
+      max: 3
+      allow_other: true
+      id: A6
+  - id: A7
+    title: Your top 3 doc pain points
+    feeds:
+    - '01'
+    why: These answers decide what goes on your Quick Rules card (§01), the one page most people will actually read. Fix the pain points first.
+    fields:
+    - prompt: 'What bugs your readers (or you) most about your docs today? Check up to three:'
+      type: multi
+      options:
+      - value: can-t-find-the-right-doc
+        label: Can't find the right doc
+      - value: docs-are-out-of-date
+        label: Docs are out of date
+      - value: formatting-is-inconsistent
+        label: Formatting is inconsistent
+      - value: steps-are-unclear-or-missing
+        label: Steps are unclear or missing
+      - value: too-long-the-answer-is-buried
+        label: Too long; the answer is buried
+      - value: too-much-jargon-or-too-many-unexplained-
+        label: Too much jargon or too many unexplained acronyms
+      - value: voice-and-tone-are-all-over-the-place
+        label: Voice and tone are all over the place
+      - value: nobody-knows-who-owns-what
+        label: Nobody knows who owns what
+      max: 3
+      allow_other: true
+      id: A7
+  - id: A8
+    title: Now, later, or skip
+    feeds:
+    - all
+    fields:
+    - prompt: You don't have to adopt every section at once. Ship a first version, then grow it.
+      type: nowlaterskip
+      sections:
+      - id: '01'
+        title: Quick Rules
+        recommended: now
+      - id: '02'
+        title: 'Before You Publish: Editing Checklist'
+        recommended: now
+      - id: '03'
+        title: Introduction
+        recommended: now
+      - id: '04'
+        title: Structure & Formatting
+        recommended: now
+      - id: '05'
+        title: Document Types & Templates
+      - id: '06'
+        title: Language & Grammar
+        recommended: now
+      - id: '07'
+        title: Accessibility
+      - id: '08'
+        title: Inclusive Language
+      - id: '09'
+        title: Writing for Non-Native English Readers
+      - id: '10'
+        title: Sensitive Information
+        recommended: now
+      - id: '11'
+        title: Using AI Writing Tools
+      - id: '12'
+        title: Contributing, Review & Maintenance
+      - id: '13'
+        title: Resources
+      id: A8
+  intro: 'About 10 minutes. The basics: who you are, where your docs live, and what this guide needs to fix.'
+- id: B
+  title: Audience & voice
+  questions:
+  - id: B1
+    title: Who reads your docs
+    feeds:
+    - '03'
+    - '06'
+    why: If you write for experts and a new hire reads it, they get lost. Write for the least experienced reader you expect, and the experts will skim.
+    fields:
+    - prompt: 'Check all that apply:'
+      type: multi
+      options:
+      - value: everyone-in-the-company
+        label: Everyone in the company
+      - value: new-hires
+        label: New hires
+      - value: engineering-it
+        label: Engineering / IT
+      - value: support-customer-success
+        label: Support / customer success
+      - value: sales-marketing
+        label: Sales / marketing
+      - value: leadership
+        label: Leadership
+      - value: contractors-or-partners
+        label: Contractors or partners
+      allow_other: true
+      id: B1
+    - prompt: Do different readers use different parts of the docs?
+      type: single
+      options:
+      - value: no-everyone-reads-all-of-it
+        label: No, everyone reads all of it
+      - value: 'yes'
+        label: 'Yes'
+      id: B1b
+    - prompt: If yes, which readers use which docs? (For example, "Support uses the troubleshooting articles; new hires use onboarding.")
+      type: text
+      id: B1c
+    - prompt: How technical are most readers?
+      type: single
+      options:
+      - value: mostly-non-technical
+        label: Mostly non-technical
+      - value: a-mix
+        label: A mix
+        recommended: true
+        note: 'if unsure: write for this one'
+      - value: mostly-technical
+        label: Mostly technical
+      id: B1d
+  - id: B2
+    title: Readers who speak English as a second language
+    feeds:
+    - '09'
+    why: Short sentences, plain words, and no idioms help everyone, and translation tools handle them much better.
+    fields:
+    - prompt: Readers who speak English as a second language
+      type: single
+      options:
+      - value: many-of-our-readers
+        label: Many of our readers
+      - value: some-of-our-readers
+        label: Some of our readers
+      - value: very-few-or-none
+        label: Very few or none
+      - value: not-sure
+        label: Not sure
+        note: treat this as "some"
+      id: B2
+    - prompt: Do people use translation tools to read your docs?
+      type: single
+      options:
+      - value: 'yes'
+        label: 'Yes'
+      - value: 'no'
+        label: 'No'
+      - value: not-sure
+        label: Not sure
+      id: B2b
+  - id: B3
+    title: US or UK English
+    feeds:
+    - '06'
+    why: '"Color" or "colour," "organize" or "organise." Pick one so spell-check and your writers stop fighting.'
+    fields:
+    - prompt: US or UK English
+      type: single
+      options:
+      - value: us-english
+        label: US English
+        note: 'spelling: Merriam-Webster'
+      - value: uk-english
+        label: UK English
+        note: 'spelling: Oxford'
+      allow_other: true
+      id: B3
+  - id: B4
+    title: Overall tone
+    feeds:
+    - '06'
+    why: 'Tone is the mood of your writing. Friendly-but-professional works for most internal docs: easy to read, still trustworthy.'
+    fields:
+    - prompt: Overall tone
+      type: single
+      options:
+      - value: professional-and-formal
+        label: Professional and formal
+      - value: professional-but-friendly
+        label: Professional but friendly
+        recommended: true
+      - value: conversational-and-casual
+        label: Conversational and casual
+      id: B4
+  - id: B5
+    title: How you talk to the reader
+    feeds:
+    - '06'
+    why: In internal docs, the reader is part of the "we." It builds a sense of belonging, especially in onboarding. (Customer-facing style guides often avoid "we" because there, it means the company talking *at* the reader.)
+    fields:
+    - prompt: 'Address the reader as:'
+      type: single
+      options:
+      - value: you
+        label: '"You"'
+        recommended: true
+        note: '"Click **Save**."'
+      - value: third-person-the-user-clicks-save
+        label: Third person ("The user clicks **Save**.")
+      id: B5
+    - prompt: Use "we" for your team or company?
+      type: single
+      options:
+      - value: 'yes'
+        label: 'Yes'
+        recommended: true
+      - value: 'no'
+        label: 'No'
+      id: B5b
+  - id: B6
+    title: Contractions
+    feeds:
+    - '06'
+    fields:
+    - prompt: Contractions
+      type: single
+      options:
+      - value: yes-use-them-don-t-you-ll
+        label: Yes, use them (*don't*, *you'll*)
+        recommended: true
+      - value: no-spell-them-out-do-not-you-will
+        label: No, spell them out (*do not*, *you will*)
+      id: B6
+  - id: B7
+    title: Emoji, GIFs, and humor
+    feeds:
+    - '04'
+    - '06'
+    why: A little personality makes docs friendlier. Too much distracts readers, and strings of emoji are hard for screen readers and for people with visual processing difficulties.
+    fields:
+    - prompt: Emoji, GIFs, and humor
+      type: single
+      options:
+      - value: never
+        label: Never
+      - value: sparingly
+        label: Sparingly
+        recommended: true
+      - value: freely
+        label: Freely
+      id: B7
+  - id: B8
+    title: Your reference style guide
+    feeds:
+    - '06'
+    - '13'
+    notes:
+    - It's okay to use two references. For example, most docs can follow the Microsoft Writing Style Guide while engineers and other highly technical writers follow Google's (or another one). Just note which docs follow which.
+    why: No team guide can cover everything. Naming one tiebreaker ends arguments fast. Free guides are easier for everyone to check. You can also search online for a rule even if you don't own the reference, for example, "How do I handle serial commas in Chicago style?" Chicago's own Q&A pages are free to read.
+    fields:
+    - prompt: 'Main reference:'
+      type: single
+      options:
+      - value: microsoft-writing-style-guide
+        label: Microsoft Writing Style Guide
+        recommended: true
+        note: free online
+      - value: google-developer-documentation-style-gui
+        label: Google developer documentation style guide
+        note: free online; best for developer docs
+      allow_other: true
+      id: B8
+    - prompt: 'For grammar and punctuation questions the main reference doesn''t answer:'
+      type: single
+      options:
+      - value: the-chicago-manual-of-style
+        label: The Chicago Manual of Style
+        recommended: true
+        note: subscription required
+      - value: ap-stylebook
+        label: AP Stylebook
+      allow_other: true
+      id: B8b
+  - id: B9
+    title: Existing brand or voice guidelines
+    feeds:
+    - '03'
+    - '06'
+    why: Marketing voice and internal-docs voice are cousins, not twins. Decide whether internal docs follow the brand guide strictly or just borrow from it.
+    fields:
+    - prompt: Do you already have brand guidelines (voice, logos, colors) that internal docs should follow?
+      type: single
+      options:
+      - value: yes-follow-them-link
+        label: Yes, follow them. Link
+        write_in: true
+      - value: yes-but-they-re-for-marketing-internal-d
+        label: Yes, but they're for marketing. Internal docs can be more relaxed.
+      - value: 'no'
+        label: 'No'
+      id: B9
+  intro: About 10 minutes. Who reads your docs, and how your docs should sound to them.
+- id: C
+  title: Formatting
+  questions:
+  - id: C1
+    title: Capitalization for titles and headings
+    feeds:
+    - '04'
+    why: Mixed capitalization is one of the first signs of an unreviewed knowledge base. It's picky but it does matter, because sentence case is easier to read and easier to get right.
+    fields:
+    - prompt: 'Page titles:'
+      type: single
+      options:
+      - value: sentence-case-how-to-reset-your-password
+        label: 'Sentence case: "How to reset your password"'
+        recommended: true
+      - value: title-case-how-to-reset-your-password
+        label: 'Title Case: "How to Reset Your Password"'
+      id: C1
+    - prompt: 'Headings inside a page:'
+      type: single
+      options:
+      - value: sentence-case
+        label: Sentence case
+        recommended: true
+      - value: title-case
+        label: Title Case
+      - value: same-as-page-titles
+        label: Same as page titles
+      id: C1b
+  - id: C2
+    title: Lists
+    feeds:
+    - '04'
+    fields:
+    - prompt: 'End punctuation in list items:'
+      type: single
+      options:
+      - value: periods-only-when-items-are-full-sentenc
+        label: Periods only when items are full sentences
+        recommended: true
+      - value: always-use-periods
+        label: Always use periods
+      - value: never-use-periods
+        label: Never use periods
+      id: C2
+    - prompt: Start each item with a capital letter?
+      type: single
+      options:
+      - value: 'yes'
+        label: 'Yes'
+        recommended: true
+      - value: 'no'
+        label: 'No'
+      id: C2b
+    always_included:
+    - Numbered lists for steps in order. Bullets for everything else.
+  - id: C3
+    title: The serial comma
+    feeds:
+    - '06'
+    why: It's the most-argued comma in English. Decide once, and nobody has to argue about it in comments again.
+    fields:
+    - prompt: '"Docs, slides, and spreadsheets"'
+      type: single
+      options:
+      - value: yes-use-it
+        label: Yes, use it
+        recommended: true
+        note: Microsoft, Google, and Chicago all use it
+      - value: no-skip-it
+        label: No, skip it
+        note: AP style
+      id: C3
+  - id: C4
+    title: Bold and italics
+    feeds:
+    - '04'
+    why: If everything is bold, nothing is. Save it for the things readers must not miss.
+    fields:
+    - prompt: Bold and italics
+      type: single
+      options:
+      - value: bold-for-ui-labels-and-key-warnings-ital
+        label: Bold for UI labels and key warnings; italics for titles of other works
+        recommended: true
+      - value: our-own-rule
+        label: Our own rule
+        write_in: true
+      id: C4
+  - id: C5
+    title: Numbers
+    feeds:
+    - '06'
+    notes:
+    - Either way, technical values like versions, pixels, ports, and measurements are always numerals.
+    why: There's no single "correct" number style. The rule that works is the one your team actually follows every time.
+    fields:
+    - prompt: Numbers
+      type: single
+      options:
+      - value: spell-out-zero-through-nine-use-numerals
+        label: Spell out zero through nine; use numerals for 10 and up
+        recommended: true
+        note: Microsoft and AP
+      - value: spell-out-one-through-one-hundred
+        label: Spell out one through one hundred
+        note: Chicago
+      - value: always-use-numerals
+        label: Always use numerals
+        note: a good fit for technical and developer teams
+      id: C5
+    - prompt: 'Ranges:'
+      type: single
+      options:
+      - value: en-dash-5-10
+        label: 'En dash: "5–10"'
+        recommended: true
+        note: for polished docs; Chicago
+      - value: hyphen-5-10
+        label: 'Hyphen: "5-10"'
+        note: easiest to type; common in technical docs and Markdown
+      - value: words-5-to-10
+        label: 'Words: "5 to 10"'
+      id: C5b
+    - prompt: 'Units of measure your docs use often (for example, GB, MB, px, ft, kg):'
+      type: text
+      id: C5c
+  - id: C6
+    title: Dates, times, and time zones
+    feeds:
+    - '06'
+    why: '"The meeting is at 3" means different things to different people on a remote team.'
+    fields:
+    - prompt: 'Dates:'
+      type: single
+      options:
+      - value: november-13-2026
+        label: November 13, 2026
+        recommended: true
+        note: for US English
+      - value: 13-november-2026
+        label: 13 November 2026
+        note: common in UK English
+      - value: '2026-11-13'
+        label: '2026-11-13'
+        note: ISO; good for file names and technical docs
+      id: C6
+    - prompt: 'Times:'
+      type: single
+      options:
+      - value: 12-hour-3-00-pm
+        label: '12-hour: 3:00 PM'
+        recommended: true
+        note: for US English
+      - value: 24-hour-15-00
+        label: '24-hour: 15:00'
+      id: C6b
+    - prompt: 'Time zones:'
+      type: single
+      options:
+      - value: always-include-a-time-zone-which-one-s
+        label: Always include a time zone . Which one(s)?
+        recommended: true
+        note: for remote or distributed teams
+        write_in: true
+      - value: only-when-it-matters
+        label: Only when it matters
+      id: C6c
+    always_included:
+    - Avoid all-number dates like 11/12/2026 in running text. Half the world reads that as November 12 and the other half as December 11.
+  - id: C7
+    title: UI elements, code, and keyboard keys
+    feeds:
+    - '04'
+    why: Readers scan for what to click and what to type. Consistent formatting is how they find it.
+    fields:
+    - prompt: 'Button names, menu items, and other on-screen labels:'
+      type: single
+      options:
+      - value: bold-click-save
+        label: '**Bold**: Click **Save**'
+        recommended: true
+        note: Microsoft
+      - value: quotes-click-save
+        label: '"Quotes": Click "Save"'
+      id: C7
+    - prompt: 'Keyboard shortcuts:'
+      type: single
+      options:
+      - value: ctrl-c
+        label: Ctrl+C
+        recommended: true
+      - value: ctrl-c
+        label: Ctrl + C
+      - value: our-own-style
+        label: Our own style
+        write_in: true
+      id: C7b
+    always_included:
+    - Use code formatting for commands, file names, file paths, and variables, like `config.yml`.
+  - id: C8
+    title: 'Callouts: notes, tips, and warnings'
+    feeds:
+    - '04'
+    why: When every other paragraph is a "Note," readers stop reading them. A short, fixed set keeps warnings meaningful.
+    fields:
+    - prompt: 'Which callout labels will you use? Check all that apply:'
+      type: multi
+      options:
+      - value: note
+        label: Note
+      - value: tip
+        label: Tip
+      - value: important
+        label: Important
+      - value: warning
+        label: Warning
+        note: for anything that could lose data, break something, or create a security risk
+      allow_other: true
+      id: C8
+    - prompt: Does your tool have built-in callout boxes (like Confluence panels or Notion callouts)?
+      type: single
+      options:
+      - value: yes-use-them
+        label: Yes, use them
+      - value: 'no'
+        label: 'No'
+      id: C8b
+  - id: C9
+    title: Links
+    feeds:
+    - '04'
+    - '13'
+    fields:
+    - prompt: 'Linking to outside websites:'
+      type: single
+      options:
+      - value: fine-when-the-source-is-reputable
+        label: Fine, when the source is reputable
+        recommended: true
+      - value: approved-sources-only-list-or-link
+        label: Approved sources only. List or link
+        write_in: true
+      - value: ask-the-guide-owner-first
+        label: Ask the guide owner first
+      id: C9
+    - prompt: Does your tool have a special link style (like Confluence smart links with the page icon and title)?
+      type: single
+      options:
+      - value: yes-use-it-for-internal-links
+        label: Yes, use it for internal links
+      - value: no-or-plain-links-are-preferred
+        label: No, or plain links are preferred
+      id: C9b
+    always_included:
+    - Descriptive link text ("see the onboarding checklist"), never "click here."
+  - id: C10
+    title: Images, screenshots, and video
+    feeds:
+    - '04'
+    - '07'
+    - '10'
+    why: An uncropped screenshot makes readers hunt. An unblurred one can leak a customer's email.
+    fields:
+    - prompt: 'Screenshots:'
+      type: multi
+      options:
+      - value: crop-to-the-relevant-area
+        label: Crop to the relevant area
+        recommended: true
+      - value: add-highlights-or-arrows-color-or-style
+        label: Add highlights or arrows. Color or style
+        write_in: true
+      - value: maximum-width-px
+        label: 'Maximum width:  px'
+        write_in: true
+      id: C10
+    - prompt: 'Preferred file formats (for example, PNG for screenshots, GIF or MP4 for short demos):'
+      type: text
+      id: C10b
+    always_included:
+    - Alt text for every meaningful image, captions or a transcript for video, and blur or crop anything sensitive in screenshots (see §10).
+  - id: C11
+    title: Color
+    feeds:
+    - '04'
+    - '07'
+    fields:
+    - prompt: Do internal docs need to use brand colors (for highlights, tables, or diagrams)?
+      type: single
+      options:
+      - value: yes-colors-or-link
+        label: Yes. Colors or link
+        write_in: true
+      - value: no-the-tool-s-defaults-are-fine
+        label: No, the tool's defaults are fine
+        recommended: true
+      id: C11
+    always_included:
+    - Never use color as the only way to show meaning (for example, "the red items are urgent").
+  - id: C12
+    title: Citations and sources
+    feeds:
+    - '06'
+    - '13'
+    why: Most internal docs need a link, not a bibliography. Research-heavy teams (legal, science, healthcare) may need a formal style.
+    fields:
+    - prompt: 'When docs quote or borrow from another source:'
+      type: single
+      options:
+      - value: link-to-the-source-inline
+        label: Link to the source inline
+        recommended: true
+        note: for most internal docs
+      - value: formal-citation-style
+        label: Formal citation style
+        suboptions:
+        - APA
+        - MLA
+        - Chicago
+        - Other
+      id: C12
+  intro: About 15 minutes. The small, everyday decisions that make docs look like they came from one team.
+- id: D
+  title: Content policies
+  questions:
+  - id: D1
+    title: Accessibility
+    feeds:
+    - '07'
+    why: Accessible docs are easier for everyone to read, not just people with disabilities. And "not sure" is a common answer. Many teams don't know who's using a screen reader until someone asks.
+    fields:
+    - prompt: 'Accessibility target:'
+      type: single
+      options:
+      - value: follow-the-basics-of-wcag-2-2-level-aa
+        label: Follow the basics of WCAG 2.2 Level AA
+        recommended: true
+      - value: we-have-our-own-accessibility-policy-lin
+        label: We have our own accessibility policy. Link
+        write_in: true
+      - value: not-sure
+        label: Not sure
+        note: use the recommended option
+      id: D1
+    - prompt: Do any of your readers use assistive technology (screen readers, screen magnifiers, voice control)?
+      type: single
+      options:
+      - value: 'yes'
+        label: 'Yes'
+      - value: 'no'
+        label: 'No'
+      - value: not-sure
+        label: Not sure
+      id: D1b
+    - prompt: 'How will you check docs for accessibility? Check all that apply:'
+      type: multi
+      options:
+      - value: our-tool-s-built-in-accessibility-checke
+        label: Our tool's built-in accessibility checker
+      - value: a-free-checker-like-wave
+        label: A free checker like WAVE
+      - value: manual-review-using-the-checklist-in-02
+        label: Manual review using the checklist in §02
+      - value: not-yet-decided
+        label: Not yet decided
+      id: D1c
+  - id: D2
+    title: Inclusive language
+    feeds:
+    - '08'
+    why: Inclusive language is clear language. It keeps any reader from feeling like the docs weren't written for them.
+    fields:
+    - prompt: Do you already have inclusive language guidelines?
+      type: single
+      options:
+      - value: yes-link
+        label: Yes. Link
+        write_in: true
+      - value: no-follow-our-main-reference-s-guidance
+        label: No. Follow our main reference's guidance
+        recommended: true
+      id: D2
+    - prompt: 'Terms your team has retired, and what to use instead (for example, whitelist → allowlist; master/slave → primary/replica):'
+      type: text
+      id: D2b
+    always_included:
+    - Use "they" when you don't know someone's gender, and avoid idioms that are violent or ableist (like "kill two birds with one stone" or "sanity check").
+  - id: D3
+    title: Sensitive information
+    feeds:
+    - '10'
+    why: Internal docs feel private, so people paste things they shouldn't. But internal docs get shared, exported, screenshotted, and searched. Treat every doc like it could leave the building.
+    fields:
+    - prompt: 'What counts as sensitive information for your team? Check all that apply:'
+      type: multi
+      options:
+      - value: passwords-api-keys-and-other-credentials
+        label: Passwords, API keys, and other credentials
+      - value: customer-names-and-data
+        label: Customer names and data
+      - value: employee-names
+        label: Employee names
+      - value: employee-personal-information-like-perso
+        label: Employee personal information (like personal email addresses, home addresses, or phone numbers)
+      - value: financial-information
+        label: Financial information
+      - value: health-information
+        label: Health information
+      - value: security-details-server-names-ip-address
+        label: Security details (server names, IP addresses, internal URLs)
+      - value: unreleased-product-or-business-plans
+        label: Unreleased product or business plans
+      allow_other: true
+      id: D3
+    - prompt: Where do secrets live instead (for example, your password manager)?
+      type: text
+      id: D3b
+    - prompt: Who answers questions about where sensitive information should live (for example, customer addresses or phone numbers)?
+      type: text
+      id: D3c
+    - prompt: Who should people contact if something sensitive gets posted by mistake?
+      type: text
+      id: D3d
+    always_included:
+    - Never put passwords, API keys, or other secrets in docs. Use placeholders like `YOUR_API_KEY` in examples.
+  - id: D4
+    title: Legal and regulatory requirements
+    feeds:
+    - '03'
+    - '10'
+    why: A style guide can't replace your legal team, but it can remind writers when to check with them. And your legal team will appreciate the chance to weigh in on when that is.
+    fields:
+    - prompt: 'Do any of these apply to your docs? Check all that apply:'
+      type: multi
+      options:
+      - value: privacy-laws-for-example-gdpr-or-state-p
+        label: Privacy laws (for example, GDPR or state privacy laws)
+      - value: health-information-rules-for-example-hip
+        label: Health information rules (for example, HIPAA)
+      - value: financial-regulations
+        label: Financial regulations
+      - value: security-audits-or-certifications-for-ex
+        label: Security audits or certifications (for example, SOC 2 or ISO 27001)
+      - value: government-contracts
+        label: Government contracts
+      - value: none-that-we-know-of
+        label: None that we know of
+      - value: not-sure
+        label: Not sure
+        note: ask your legal or compliance contact before publishing the guide
+      id: D4
+    - prompt: 'Required labels or notices (for example, "Confidential: Internal use only"):'
+      type: text
+      id: D4b
+  - id: D5
+    title: AI writing tools
+    feeds:
+    - '11'
+    why: Most teams are already using AI tools, with or without a policy. A clear rule keeps sensitive data safe and makes sure someone is accountable for what gets published.
+    fields:
+    - prompt: Does your company have a policy on AI use for internal purposes already?
+      type: single
+      options:
+      - value: yes-link
+        label: Yes. Link
+        write_in: true
+      - value: 'no'
+        label: 'No'
+      id: D5
+    - prompt: Can writers use AI tools for docs?
+      type: single
+      options:
+      - value: yes-with-human-review
+        label: Yes, with human review
+        recommended: true
+      - value: only-approved-tools
+        label: Only approved tools
+        write_in: true
+      - value: 'no'
+        label: 'No'
+      id: D5b
+    - prompt: 'What can AI help with? Check all that apply:'
+      type: multi
+      options:
+      - value: drafting
+        label: Drafting
+      - value: editing-and-proofreading
+        label: Editing and proofreading
+      - value: summarizing-long-docs-or-meetings
+        label: Summarizing long docs or meetings
+      - value: translating
+        label: Translating
+      allow_other: true
+      id: D5c
+    - prompt: Should docs say when AI helped write them?
+      type: single
+      options:
+      - value: not-required-as-long-as-a-person-reviewe
+        label: Not required, as long as a person reviewed it
+        recommended: true
+      - value: yes-add-a-note
+        label: Yes, add a note
+      - value: follow-our-company-ai-policy
+        label: Follow our company AI policy
+        note: if you have one; see above
+      id: D5d
+    always_included:
+    - Never paste sensitive information (see D3) into an AI tool your company hasn't approved. A person reviews and owns every doc, no matter who or what drafted it.
+  intro: About 10 minutes. The rules that protect your readers, your customers, and your company.
+- id: E
+  title: Maintenance
+  questions:
+  - id: E1
+    title: Who contributes to docs
+    feeds:
+    - '12'
+    fields:
+    - prompt: Who contributes to docs
+      type: single
+      options:
+      - value: anyone-on-the-team-with-review
+        label: Anyone on the team, with review
+        recommended: true
+      - value: specific-people-only
+        label: Specific people only
+        write_in: true
+      - value: only-the-docs-team-or-guide-owner
+        label: Only the docs team or guide owner
+      id: E1
+  - id: E2
+    title: How changes get approved
+    feeds:
+    - '12'
+    why: If fixing a typo takes a ticket and two approvals, nobody fixes typos.
+    fields:
+    - prompt: 'Small fixes (typos, broken links):'
+      type: single
+      options:
+      - value: anyone-can-fix-them-right-away
+        label: Anyone can fix them right away
+        recommended: true
+      - value: they-still-need-review
+        label: They still need review
+      id: E2
+    - prompt: 'Bigger changes (new docs, rewrites, new rules for this guide):'
+      type: single
+      options:
+      - value: the-doc-owner-or-guide-owner-approves
+        label: The doc owner or guide owner approves
+        recommended: true
+      - value: any-teammate-can-review
+        label: Any teammate can review
+      allow_other: true
+      id: E2b
+    - prompt: What counts as a bigger change? (For example, anything that changes steps, a policy, or a rule in this guide.)
+      type: text
+      id: E2c
+  - id: E3
+    title: How people suggest changes to this guide
+    feeds:
+    - '12'
+    fields:
+    - prompt: How people suggest changes to this guide
+      type: multi
+      options:
+      - value: comment-on-the-guide-itself
+        label: Comment on the guide itself
+      - value: post-in-a-channel
+        label: Post in a channel
+        write_in: true
+      - value: contact-the-guide-owner-directly-see-a2
+        label: Contact the guide owner directly (see A2)
+      - value: open-a-pull-request-or-issue
+        label: Open a pull request or issue
+        note: for docs in GitHub or GitLab
+      allow_other: true
+      id: E3
+  - id: E4
+    title: Review schedule
+    feeds:
+    - '12'
+    why: Outdated docs are worse than no docs, because people trust them. A visible review date tells readers how much to trust what they're reading.
+    fields:
+    - prompt: How often will someone review this guide?
+      type: single
+      options:
+      - value: every-6-months
+        label: Every 6 months
+        recommended: true
+      - value: once-a-year
+        label: Once a year
+      - value: only-when-something-changes
+        label: Only when something changes
+      id: E4
+    - prompt: Show a "Last reviewed" date on docs?
+      type: single
+      options:
+      - value: 'yes'
+        label: 'Yes'
+        recommended: true
+      - value: 'no'
+        label: 'No'
+      id: E4b
+  - id: E5
+    title: Retiring old docs
+    feeds:
+    - '12'
+    fields:
+    - prompt: 'When a doc is out of date and nobody will update it:'
+      type: single
+      options:
+      - value: archive-it
+        label: Archive it
+        recommended: true
+      - value: add-an-outdated-banner-and-leave-it-up
+        label: Add an "Outdated" banner and leave it up
+      - value: delete-it
+        label: Delete it
+      id: E5
+    - prompt: Who decides?
+      type: text
+      id: E5b
+  - id: E6
+    title: Sharing the guide
+    feeds:
+    - '03'
+    why: A guide nobody knows about can't help anybody. Put it where writers already are.
+    fields:
+    - prompt: Where will the finished guide live?
+      type: text
+      id: E6
+    - prompt: 'How will people find out about it? Check all that apply:'
+      type: multi
+      options:
+      - value: team-announcement-or-meeting
+        label: Team announcement or meeting
+      - value: part-of-onboarding-for-new-hires
+        label: Part of onboarding for new hires
+      - value: pinned-in-a-team-channel
+        label: Pinned in a team channel
+      - value: linked-from-doc-templates
+        label: Linked from doc templates
+      allow_other: true
+      id: E6b
+  intro: About 5 minutes. A style guide is a living document. These answers keep it alive.
