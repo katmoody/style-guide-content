@@ -17,24 +17,58 @@ The rules that come up most, on one page. When you have a question this page doe
 
 ## Voice
 
-1. **Talk to the reader as "you."** Use "we" for the team (§06).
+<!-- choose B5 -->
+<!-- option "Third person" -->
+1. **Refer to the reader by role,** like "the employee" (§06).
+<!-- option * -->
+1. **Talk to the reader as "you"** (§06).
+<!-- end choose -->
 2. **Use active voice and present tense:** "The finance team approves requests" (§06).
 3. **Keep it simple.** Short sentences, common words, no idioms (§06, §09).
 
 ## Structure
 
-4. **Use sentence case for titles and headings,** and make titles specific: "Request time off" (§04).
+<!-- choose C1 -->
+<!-- option "Title Case" -->
+4. **Use Title Case for page titles,** and make titles specific: "Request Time Off" (§04).
+<!-- option * -->
+4. **Use sentence case for page titles,** and make titles specific: "Request time off" (§04).
+<!-- end choose -->
 5. **Put headings in order.** Don't skip levels (§04).
 6. **Use numbered lists for steps** and bullets for everything else (§04).
 7. **Start each step with the action:** "Select **Save**" (§04).
+<!-- choose C7 -->
+<!-- option "Quotes" -->
+8. **Put button and menu names in quotation marks.** Use `code formatting` for commands and file names (§04).
+<!-- option * -->
 8. **Bold buttons and menu names.** Use `code formatting` for commands and file names (§04).
+<!-- end choose -->
 
 ## Words and numbers
 
 9. **Spell out acronyms on first use,** unless everyone knows them, like PDF (§06).
+<!-- choose C3 -->
+<!-- option "No, skip it" -->
+10. **Skip the serial comma:** "docs, slides and spreadsheets" (§06).
+<!-- option * -->
 10. **Use the serial comma:** "docs, slides, and spreadsheets" (§06).
+<!-- end choose -->
+<!-- choose C5 -->
+<!-- option "one through one hundred" -->
+11. **Use numerals for technical values:** "5 GB," "version 2." Spell out one through one hundred for everyday counts: "twelve steps" (§06).
+<!-- option "Always use numerals" -->
+11. **Use numerals for all numbers:** "5 GB," "3 steps" (§06).
+<!-- option * -->
 11. **Use numerals for technical values:** "5 GB," "version 2." Spell out zero through nine for everyday counts: "three steps" (§06).
+<!-- end choose -->
+<!-- choose C6 -->
+<!-- option "13 November 2026" -->
+12. **Write dates like this: 13 November 2026.** Add a time zone for meetings and deadlines (§06).
+<!-- option "2026-11-13" -->
+12. **Write dates like this: 2026-11-13.** Add a time zone for meetings and deadlines (§06).
+<!-- option * -->
 12. **Write dates like this: November 13, 2026.** Add a time zone for meetings and deadlines (§06).
+<!-- end choose -->
 
 ## Links, images, and safety
 

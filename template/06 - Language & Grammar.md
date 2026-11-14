@@ -45,6 +45,17 @@ Tone is the mood of your writing. Ours is **professional but friendly**: easy to
 
 Voice is how your docs sound to the reader. Keep it consistent across every doc, no matter who writes it.
 
+<!-- choose B5 -->
+<!-- option "Third person" -->
+### Write about the reader in the third person
+
+Refer to the reader by role ("the user," "the employee") to keep a formal, neutral tone. For steps, still start with the action (this is called the **imperative**): "Select **Export**."
+
+- **Yes:** Employees can export reports as PDFs. To export one, select **Export**.
+- **No:** You can export reports as PDFs.
+
+Use "they" for a reader whose gender you don't know (see §08).
+<!-- option * -->
 ### Talk to the reader as "you"
 
 Write as though you're talking to the person reading. For steps, start with the action (this is called the **imperative**): "Select **Export**." The "you" is implied.
@@ -53,9 +64,12 @@ Write as though you're talking to the person reading. For steps, start with the 
 - **No:** The user can export reports as PDFs. Users should select **Export**.
 
 Use the third person for what software or other people do: "The system sends a confirmation email."
+<!-- end choose -->
 
 > **Customize (B5):** If you chose third person, flip these examples and explain why (for example, formal compliance docs).
 
+<!-- choose B5b -->
+<!-- option "Yes" -->
 ### Use "we" for the team
 
 In internal docs, the reader is part of the team, so "we" includes them: "We ship updates on Fridays." It makes docs feel personal and helps new teammates feel like they belong.
@@ -63,10 +77,15 @@ In internal docs, the reader is part of the team, so "we" includes them: "We shi
 - **Make it clear which "we."** If it could mean the company, your team, or the docs team, name the team: "The support team reviews tickets daily."
 - **Use "you" for steps, not "we."** Write "Select **Save**," not "Now we select **Save**."
 - **Don't let "we" hide an owner.** "We should update this page" leaves it to no one. Name who: "[Team or person] updates this page each quarter."
+<!-- option "No" -->
+### Name the team instead of "we"
+
+Don't use "we." Name the team or role, so readers always know who's responsible: "The support team reviews tickets daily."
+<!-- end choose -->
 
 > **Why this differs from some style guides:** Customer-facing guides, like Microsoft's, often avoid "we" because there it means the company talking *at* a customer. In internal docs, "we" includes the reader.
 >
-> **Customize (B5):** If you chose not to use "we," replace this subsection with: "Avoid 'we.' Name the team instead."
+> **Customize (B5b):** If you chose not to use "we," replace this subsection with: "Avoid 'we.' Name the team instead."
 
 ### Use active voice
 
@@ -91,11 +110,18 @@ Docs describe how things work now. Future tense makes readers wonder when it'll 
 - **Yes:** The report shows last month's totals.
 - **No:** The report will show last month's totals.
 
+<!-- choose B6 -->
+<!-- option "Yes, use them" -->
 ### Use contractions
 
 Common contractions (*it's*, *you're*, *don't*) sound friendly and natural. Avoid awkward ones like *there'd*, *it'll*, and *they'd*.
 
 For warnings where a missed word could cause harm, spell it out: "Do **not** delete this folder."
+<!-- option "No, spell them out" -->
+### Spell out contractions
+
+Write *do not*, *you will*, and *it is*, not *don't*, *you'll*, and *it's*. It keeps a more formal tone.
+<!-- end choose -->
 
 > **Customize (B6):** If you chose no contractions, replace this subsection with: "Spell out contractions (*do not*, *you will*)."
 
@@ -106,7 +132,12 @@ When you don't know someone's gender, use "they," or rewrite with "you" or a rol
 ## Spelling and word choice
 
 - **[Company]** is always written exactly this way. Not: [common mistakes from A1].
-- Use [US] English spelling.
+<!-- choose B3 -->
+<!-- option "US English" -->
+- Use US English spelling. Check [Merriam-Webster](https://www.merriam-webster.com/), and use the first spelling it lists.
+<!-- option "UK English" -->
+- Use UK English spelling: *colour*, *organise*, *centre*. Check an Oxford dictionary.
+<!-- end choose -->
 
 ### Word list
 
@@ -157,19 +188,38 @@ Punctuation isn't noticeable when it's done right. But when it's done wrong, it 
 >
 > This is a classic example of a comma placement to die for.
 
+<!-- choose C3 -->
+<!-- option "Yes, use it" -->
 - **In a list of three or more, put a comma before the last item** (the *serial comma*, also called the Oxford comma): "docs, slides, and spreadsheets."
+<!-- option "No, skip it" -->
+- **Don't put a comma before the last item in a list** (skip the *serial comma*, also called the Oxford comma): "docs, slides and spreadsheets." Add it back only when a sentence would be confusing without it.
+<!-- end choose -->
 - **When two words work together to describe a noun, hyphenate them** (a *compound modifier*): "a high-quality image." No hyphen when they come after the noun: "the image is high quality."
+<!-- choose C5b -->
+<!-- option "En dash" -->
 - **Use an en dash (–) for ranges:** "pages 5–10," "9:00 AM–5:00 PM." It's a little longer than a hyphen.
   - **Mac:** Option + hyphen
   - **Windows:** Alt + 0150 (on the number pad)
   - **HTML or Markdown:** `&ndash;`
+<!-- option "Hyphen" -->
+- **Use a hyphen for ranges:** "pages 5-10," "9:00 AM-5:00 PM." No spaces around it.
+<!-- option "Words" -->
+- **Use "to" for ranges:** "pages 5 to 10," "9:00 AM to 5:00 PM."
+<!-- end choose -->
 - **Use em dashes (—) sparingly, with no spaces.** A comma, colon, or parentheses usually work better.
   - **Mac:** Option + Shift + hyphen
   - **Windows:** Alt + 0151 (on the number pad)
   - **HTML or Markdown:** `&mdash;`
+<!-- choose B3 -->
+<!-- option "UK English" -->
+- **Put periods and commas outside quotation marks,** unless they're part of the quote.
+  - **Yes:** Call it "the dashboard".
+  - **No:** Call it "the dashboard."
+<!-- option * -->
 - **Put periods and commas inside quotation marks.**
   - **Yes:** Call it "the dashboard."
   - **No:** Call it "the dashboard".
+<!-- end choose -->
 - **Use semicolons sparingly.** Two short sentences are usually clearer than one long one.
   - **Instead of:** The team worked on the project for months; it's finally ready to present.
   - **Try:** The team worked on the project for months. It's finally ready to present.
@@ -180,7 +230,14 @@ Punctuation isn't noticeable when it's done right. But when it's done wrong, it 
 ## Numbers and units
 
 - **Technical values are always numerals:** version numbers, measurements, pixels, ports, error codes, numbers in the UI, and anything the reader types. Put a space before a unit: "5 GB," "3 inches," "16 px."
+<!-- choose C5 -->
+<!-- option "zero through nine" -->
 - **For everyday counts in sentences, spell out zero through nine and use numerals for 10 and up:** "five steps," "15 users."
+<!-- option "one through one hundred" -->
+- **For everyday counts in sentences, spell out one through one hundred and use numerals above that:** "twelve steps," "150 users."
+<!-- option "Always use numerals" -->
+- **Use numerals for everyday counts too,** even under 10: "5 steps," "15 users."
+<!-- end choose -->
 - **Spell out a number that starts a sentence,** or rewrite the sentence so it doesn't start with one.
 - **Use commas in numbers with four or more digits:** "1,000," "25,000." **Except** years, ports, version numbers, and codes: "2026," "port 8080."
 - **Units we use often:** [list from C5, for example GB, MB, px].
@@ -189,10 +246,27 @@ Punctuation isn't noticeable when it's done right. But when it's done wrong, it 
 
 ## Dates and times
 
-- **Spell out the month:** November 13, 2026. Don't use ordinals like "November 13th."
+<!-- choose C6 -->
+<!-- option "November 13, 2026" -->
+- **Write dates as month, day, year, with the month spelled out:** November 13, 2026. Don't use ordinals like "November 13th."
+<!-- option "13 November 2026" -->
+- **Write dates as day, month, year, with the month spelled out:** 13 November 2026. Don't use ordinals like "13th November."
+<!-- option "2026-11-13" -->
+- **Write dates in ISO format (year-month-day):** 2026-11-13. It sorts correctly and reads the same everywhere.
+<!-- end choose -->
 - **Avoid all-number dates** like 11/12/2026 in running text. Readers in different countries read them differently.
+<!-- choose C6b -->
+<!-- option "12-hour" -->
 - **Times:** 3:00 PM. Use "noon" and "midnight," not "12:00 noon."
-- **Time zones:** Include one for meetings and deadlines: "3:00 PM ET." For global teams, use Coordinated Universal Time (UTC).
+<!-- option "24-hour" -->
+- **Times:** use the 24-hour clock: 15:00, 09:30.
+<!-- end choose -->
+<!-- choose C6c -->
+<!-- option "Only when it matters" -->
+- **Time zones:** Include one when readers are in different time zones: "3:00 PM ET." For global teams, use Coordinated Universal Time (UTC).
+<!-- option * -->
+- **Time zones:** Always include one for meetings and deadlines: "3:00 PM ET." For global teams, use Coordinated Universal Time (UTC).
+<!-- end choose -->
 
 > **Customize (C6):** Swap in your date format, 12- or 24-hour time, and default time zone.
 

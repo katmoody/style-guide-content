@@ -580,7 +580,7 @@ parts:
       type: single
       options:
       - value: always-include-a-time-zone-which-one-s
-        label: Always include a time zone . Which one(s)?
+        label: Always include a time zone
         recommended: true
         note: for remote or distributed teams
         write_in: true

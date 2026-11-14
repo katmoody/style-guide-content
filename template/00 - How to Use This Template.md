@@ -31,10 +31,12 @@ The template uses three kinds of markers:
 
 - **[Text in brackets]** is a placeholder. Replace it with your team's information: "[Company]" becomes your company name.
 - **Customize notes** look like this:
+
   > **Customize (B5):** If you chose third person, flip these examples.
 
   The code in parentheses is the questionnaire question that decides that rule. Make the change, then delete the note.
 - **Template notes** appear at the top of each section:
+
   > **Template note:** Notes like this are instructions for whoever sets up the guide. **Delete them before you publish.**
 
 **Before you publish, search the whole guide for "Customize" and "Template note," and scan for any [bracketed placeholders].** If you find any, the guide isn't finished yet.
@@ -42,5 +44,5 @@ The template uses three kinds of markers:
 ## A few tips
 
 - **Every team is different.** What works for one may not work for another. Change anything that doesn't fit, and cut anything you don't need.
-- **Name an owner** (questionnaire question A2). A guide nobody owns goes stale.
+- **Name an owner** (questionnaire question A2). A guide nobody owns is one that goes stale.
 - **Share it widely.** Link it from your doc templates, onboarding, and team channels so people actually find it.

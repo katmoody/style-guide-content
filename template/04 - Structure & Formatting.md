@@ -15,7 +15,20 @@ How you structure and format a doc decides whether people can find what they nee
 
 ## Titles and headings
 
-- **Use sentence case** for page titles and headings: "How to reset your password." Capitalize only the first word and proper nouns.
+<!-- choose C1 -->
+<!-- option "Title Case" -->
+- **Use Title Case for page titles:** "How to Reset Your Password." Capitalize the major words.
+<!-- option * -->
+- **Use sentence case for page titles:** "How to reset your password." Capitalize only the first word and proper nouns.
+<!-- end choose -->
+<!-- choose C1b -->
+<!-- option "Title Case" -->
+- **Use Title Case for headings inside a page.**
+<!-- option "Same as page titles" -->
+- **Capitalize headings the same way as page titles.**
+<!-- option * -->
+- **Use sentence case for headings inside a page.**
+<!-- end choose -->
 - **Make titles specific.** Readers should know what they'll get before they click: "Request time off," not "PTO stuff."
 - **Use one H1 (the page title), then headings in order.** Don't skip levels (H2 to H4). Readers and screen readers use headings to navigate (see §07).
 - **Put the most important words first** in a heading, so it's easy to scan.
@@ -28,8 +41,20 @@ Lists break content into pieces that are easy to scan. But if everything on a pa
 
 - **Use numbered lists for steps in order.** Use bullets for everything else.
 - **Make items parallel.** If one item starts with a verb, they all should.
+<!-- choose C2b -->
+<!-- option "Yes" -->
 - **Start each item with a capital letter.**
+<!-- option "No" -->
+- **Start items with a lowercase letter,** unless the first word is a proper noun.
+<!-- end choose -->
+<!-- choose C2 -->
+<!-- option "Always use periods" -->
+- **End every list item with a period.**
+<!-- option "Never use periods" -->
+- **Don't end list items with periods,** even when they're complete sentences.
+<!-- option * -->
 - **End items with periods only when they're complete sentences.**
+<!-- end choose -->
 - **Keep nesting to two levels.** If you need more, the content probably needs headings instead.
 
 > **Customize (C2):** Update the punctuation and capitalization rules to match your answers.
@@ -46,11 +71,23 @@ For full step-by-step templates, see §05.
 
 ## Bold, italics, and emphasis
 
+<!-- choose C4 -->
+<!-- option "Our own rule" -->
+- [Your team's rule for bold and italics, from C4.]
+<!-- option * -->
 - **Use bold** for UI labels and for warnings readers must not miss.
 - **Use italics** for the titles of books, reports, and other works.
+<!-- end choose -->
 - **Don't underline text** that isn't a link. Readers will try to click it.
 - **Don't use ALL CAPS** for emphasis. It reads like shouting and is harder to read.
+<!-- choose B7 -->
+<!-- option "Never" -->
+- **Don't use emoji or GIFs** in docs.
+<!-- option "Freely" -->
+- **Emoji and GIFs are welcome,** but never in place of words, and never in a string (see §07).
+<!-- option * -->
 - **Use emoji sparingly,** and never in place of words (see §07).
+<!-- end choose -->
 
 If everything is bold, nothing is. Save emphasis for what matters most.
 
@@ -58,10 +95,22 @@ If everything is bold, nothing is. Save emphasis for what matters most.
 
 ## UI elements, code, and keyboard keys
 
+<!-- choose C7 -->
+<!-- option "Quotes" -->
+- **Put the names of buttons, menus, and other on-screen labels in quotation marks,** and match the screen exactly: Select "Save changes."
+<!-- option * -->
 - **Bold the names of buttons, menus, and other on-screen labels,** and match the screen exactly: "Select **Save changes**."
+<!-- end choose -->
 - **Use "select"** for buttons and menu items. It works whether someone uses a mouse, touchscreen, or keyboard.
 - **Use code formatting** for commands, file names, file paths, and variables: `config.yml`, `npm install`.
+<!-- choose C7b -->
+<!-- option "Ctrl + C" -->
+- **Write keyboard shortcuts with spaces around the plus sign:** Ctrl + C (Windows), Command + C (Mac).
+<!-- option "Ctrl+C" -->
 - **Write keyboard shortcuts like this:** Ctrl+C (Windows), Command+C (Mac).
+<!-- option * -->
+- **Write keyboard shortcuts like this:** [your team's style, from C7].
+<!-- end choose -->
 
 > **Customize (C7):** Update these rules if you chose quotation marks for UI labels or a different shortcut style.
 

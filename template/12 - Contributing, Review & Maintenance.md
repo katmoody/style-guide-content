@@ -24,7 +24,12 @@ Every doc lists an owner (a person or a role) and a "Last reviewed" date near th
 
 ## Making changes
 
-- **Small fixes** (typos, broken links): [Anyone can fix them right away.]
+<!-- choose E2 -->
+<!-- option "They still need review" -->
+- **Small fixes** (typos, broken links): still go through review, like any other change.
+<!-- option * -->
+- **Small fixes** (typos, broken links): anyone can fix them right away.
+<!-- end choose -->
 - **Bigger changes:** [The doc owner approves them.]
 - **What counts as a bigger change:** [Your definition from E2, for example "anything that changes steps, a policy, or a rule in this guide."]
 

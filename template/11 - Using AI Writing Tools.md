@@ -27,7 +27,14 @@ AI tools can help you draft, edit, and summarize faster. They can also make thin
 - **Never paste sensitive information into an AI tool that isn't approved** (see §10). That includes customer data, credentials, and anything confidential.
 - **Check every fact, link, name, and step.** AI tools can invent details that sound right but aren't. Test steps yourself when you can.
 - **Make it sound like us.** Edit AI drafts to match this guide's voice and rules (see §06).
-- **Disclosure:** [Not required, as long as a person reviewed it.]
+<!-- choose D5d -->
+<!-- option "Yes, add a note" -->
+- **Disclosure:** Add a short note to any doc that AI helped write, like "Drafted with AI assistance and reviewed by [name]."
+<!-- option "company AI policy" -->
+- **Disclosure:** Follow our company AI policy.
+<!-- option * -->
+- **Disclosure:** Not required, as long as a person reviewed the doc.
+<!-- end choose -->
 
 > **Customize (D5):** Update the disclosure rule to match your answer.
 
