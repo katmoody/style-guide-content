@@ -1,2 +1,3 @@
-# style-guide-content
-Content for the Internal Documentation Style Guide Template and builder
+# Style guide content
+
+Content for the Internal Documentation Style Guide Template and Style Guide Builder by Katrina Moody. Licensed CC BY-SA 4.0.
