@@ -3,6 +3,7 @@ license: CC BY-SA 4.0
 author: Katrina Moody
 parts:
 - id: A
+  done_message: "You've got a team, a deadline, and someone with the final say. That's more than most style guides ever get."
   title: Setup
   questions:
   - id: A1
@@ -197,6 +198,7 @@ parts:
       id: A8
   intro: 'About 10 minutes. The basics: who you are, where your docs live, and what this guide needs to fix.'
 - id: B
+  done_message: "Your docs know who they're talking to now. Your readers will feel the difference."
   title: Audience & voice
   questions:
   - id: B1
@@ -420,6 +422,7 @@ parts:
       id: B9
   intro: About 10 minutes. Who reads your docs, and how your docs should sound to them.
 - id: C
+  done_message: "Serial comma: settled. Other grammatical arguments are up to you."
   title: Formatting
   questions:
   - id: C1
@@ -743,6 +746,7 @@ parts:
       id: C12
   intro: About 15 minutes. The small, everyday decisions that make docs look like they came from one team.
 - id: D
+  done_message: "That was a lot to get through, but future you says thanks."
   title: Content policies
   questions:
   - id: D1
@@ -930,6 +934,7 @@ parts:
     - Never paste sensitive information (see D3) into an AI tool your company hasn't approved. A person reviews and owns every doc, no matter who or what drafted it.
   intro: About 10 minutes. The rules that protect your readers, your customers, and your company.
 - id: E
+  done_message: "A guide with an owner is a guide that stays current."
   title: Maintenance
   questions:
   - id: E1
