@@ -138,6 +138,7 @@ When you don't know someone's gender, use "they," or rewrite with "you" or a rol
 <!-- option "UK English" -->
 - Use UK English spelling: *colour*, *organise*, *centre*. Check an Oxford dictionary.
 <!-- end choose -->
+- **No fuzzy standards.** If a rule says "reputable," "appropriate," "sparingly," or "when needed," say who decides or how to tell. "Use callouts sparingly" leaves everyone guessing; "No more than one callout per section" doesn't.
 
 ### Word list
 
@@ -206,7 +207,7 @@ Punctuation isn't noticeable when it's done right. But when it's done wrong, it 
 <!-- option "Words" -->
 - **Use "to" for ranges:** "pages 5 to 10," "9:00 AM to 5:00 PM."
 <!-- end choose -->
-- **Use em dashes (—) sparingly, with no spaces.** A comma, colon, or parentheses usually work better.
+- **Use em dashes (—) with no spaces, and no more than one per paragraph.** A comma, colon, or parentheses usually work better.
   - **Mac:** Option + Shift + hyphen
   - **Windows:** Alt + 0151 (on the number pad)
   - **HTML or Markdown:** `&mdash;`
@@ -220,7 +221,7 @@ Punctuation isn't noticeable when it's done right. But when it's done wrong, it 
   - **Yes:** Call it "the dashboard."
   - **No:** Call it "the dashboard".
 <!-- end choose -->
-- **Use semicolons sparingly.** Two short sentences are usually clearer than one long one.
+- **Use semicolons rarely.** If a period works, use a period. Two short sentences are usually clearer than one long one.
   - **Instead of:** The team worked on the project for months; it's finally ready to present.
   - **Try:** The team worked on the project for months. It's finally ready to present.
 - **Skip exclamation points** in most docs. Save them for real excitement, like a launch announcement.
@@ -276,7 +277,14 @@ When you borrow from another source, credit it. In most internal docs, a link is
 
 - **Link inline with descriptive text:** "See the [security team's password policy](#)."
 - **For quotes or code snippets,** put the link right below them.
-- **Link only to reputable sources.** [Add your approved sources or link-out policy from C9.]
+<!-- choose C9 -->
+<!-- option "Fine, when" -->
+- **Link only to reputable sources:** official vendor docs, standards bodies, and the sources in §13. Not sure? Ask [guide owner, from A2].
+<!-- option "Approved sources only" -->
+- **Link only to approved sources:** [list them here or link to the list].
+<!-- option "Ask the guide owner" -->
+- **Ask [guide owner, from A2] before linking outside the company.**
+<!-- end choose -->
 
 > **Customize (C9, C12):** If you chose a formal citation style, name it here and link to its guide.
 

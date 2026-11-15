@@ -47,7 +47,7 @@ parts:
       type: text
       id: A3b
     - prompt: Target date for the first version
-      type: text
+      type: date
       id: A3c
   - id: A4
     title: Where your docs live
@@ -657,7 +657,7 @@ parts:
       type: single
       options:
       - value: fine-when-the-source-is-reputable
-        label: Fine, when the source is reputable
+        label: 'Fine, when the source is reputable (official vendor docs, standards bodies, or sources listed in §13)'
         recommended: true
       - value: approved-sources-only-list-or-link
         label: Approved sources only. List or link

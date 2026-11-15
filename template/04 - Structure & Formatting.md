@@ -86,7 +86,7 @@ For full step-by-step templates, see §05.
 <!-- option "Freely" -->
 - **Emoji and GIFs are welcome,** but never in place of words, and never in a string (see §07).
 <!-- option * -->
-- **Use emoji sparingly,** and never in place of words (see §07).
+- **Use emoji sparingly:** at most one per heading or message, and never in place of words (see §07).
 <!-- end choose -->
 
 If everything is bold, nothing is. Save emphasis for what matters most.
@@ -116,7 +116,7 @@ If everything is bold, nothing is. Save emphasis for what matters most.
 
 ## Callouts: notes, tips, and warnings
 
-Use callouts to set apart information that doesn't fit in the main text. Use them sparingly. When every other paragraph is a note, readers stop reading them.
+Use callouts to set apart information that doesn't fit in the main text. As a rule of thumb, use no more than one per section. When every other paragraph is a note, readers stop reading them.
 
 | Label | Use it for |
 | --- | --- |
@@ -134,10 +134,17 @@ Use callouts to set apart information that doesn't fit in the main text. Use the
 - **Write descriptive link text:** "See the onboarding checklist," not "click here."
 - **Link to the source of truth,** not a copy of it.
 - **Don't overdo it.** Too many links make a page hard to read. Link the first mention, not every mention.
-- **Linking outside the company:** [Your policy from C9, for example "Link only to reputable sources."]
+<!-- choose C9 -->
+<!-- option "Fine, when" -->
+- **Linking outside the company:** link only to reputable sources: official vendor docs, standards bodies, and the sources in §13.
+<!-- option "Approved sources only" -->
+- **Linking outside the company:** link only to approved sources: [list them here or link to the list].
+<!-- option "Ask the guide owner" -->
+- **Linking outside the company:** ask [guide owner, from A2] first.
+<!-- end choose -->
 - [If your tool has a special link style, like Confluence smart links with the page icon and title, say when to use it.]
 
-> **Customize (C9):** Add your link-out policy and your tool's link style.
+> **Customize (C9b):** Add your tool's link style, if it has one.
 
 ## Images, screenshots, and video
 

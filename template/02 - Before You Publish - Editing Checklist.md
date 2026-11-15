@@ -34,7 +34,7 @@ Run through this list before you publish or update any doc. It takes a few minut
 - [ ] Headings are in order, with no extra formatting inside them (§04).
 - [ ] The doc isn't mostly lists. If a section needs explaining, it's a paragraph (§04).
 - [ ] Buttons and menu names are **bold**. Code, file names, and variables use `code formatting` (§04).
-- [ ] Callouts are used sparingly (§04).
+- [ ] No more than one callout per section (§04).
 
 ## Links
 

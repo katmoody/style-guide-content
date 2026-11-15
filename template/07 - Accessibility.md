@@ -27,7 +27,7 @@ We follow the basics of the [Web Content Accessibility Guidelines (WCAG) 2.2](ht
 ## Language
 
 - **Use plain language.** Short sentences, common words, one idea per sentence (see §06 and §09).
-- **Use emoji sparingly,** and never in place of words. A string of emoji is hard to read for people with visual processing difficulties, and screen readers read each one aloud.
+- **Use emoji sparingly** (at most one per heading or message), and never in place of words. A string of emoji is hard to read for people with visual processing difficulties, and screen readers read each one aloud.
 - **Avoid ALL CAPS and heavy bold.** Both are harder to read, and some screen readers spell out all-caps words letter by letter.
 
 ## Images and media
