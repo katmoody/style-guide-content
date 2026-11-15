@@ -29,6 +29,7 @@ How you structure and format a doc decides whether people can find what they nee
 <!-- option * -->
 - **Use sentence case for headings inside a page.**
 <!-- end choose -->
+- **Display text can use Title Case.** Product names and the titles on certificates, badges, and awards follow their own design, not the heading rule: "Certificate of Completion," "Employee of the Month."
 - **Make titles specific.** Readers should know what they'll get before they click: "Request time off," not "PTO stuff."
 - **Use one H1 (the page title), then headings in order.** Don't skip levels (H2 to H4). Readers and screen readers use headings to navigate (see §07).
 - **Put the most important words first** in a heading, so it's easy to scan.
