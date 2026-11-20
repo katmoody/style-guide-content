@@ -1,9 +1,5 @@
 ---
 title: "13 - Resources"
-dateCreated: 2026-04-25
-tags:
-  - theme/writing
-status: draft-2026
 ---
 # 13 - Resources
 

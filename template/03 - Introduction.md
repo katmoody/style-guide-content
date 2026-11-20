@@ -1,11 +1,5 @@
 ---
 title: "03 - Introduction"
-dateCreated: Friday, August 8th 2025, 10:59:05 am
-dateModified: Friday, November 13th 2026, 4:46:55 pm
-tags:
-  - theme/writing
-  - theme/craft
-status: draft-2026
 ---
 # 03 - Introduction
 
@@ -29,20 +23,20 @@ Anyone who writes or updates [Company] internal docs, including [knowledge base 
 
 ## What's in this guide
 
-| Section | What it covers |
-| --- | --- |
-| §01 Quick Rules | The most important rules, on one page |
-| §02 Before You Publish | An editing checklist to use every time |
-| §04 Structure & Formatting | Headings, lists, steps, links, images, and more |
-| §05 Document Types & Templates | Starter templates and where our docs live |
-| §06 Language & Grammar | Voice, tone, word choice, punctuation, and numbers |
-| §07 Accessibility | Making docs work for everyone |
-| §08 Inclusive Language | Writing that welcomes every reader |
-| §09 Writing for Non-Native English Readers | Clear writing that translates well |
-| §10 Sensitive Information | What never goes in docs |
-| §11 Using AI Writing Tools | When and how to use AI for docs |
-| §12 Contributing, Review & Maintenance | How docs (and this guide) stay up to date |
-| §13 Resources | References, tools, and further reading |
+| Section                                    | What it covers                                     |
+| ------------------------------------------ | -------------------------------------------------- |
+| §01 Quick Rules                            | The most important rules, on one page              |
+| §02 Before You Publish                     | An editing checklist to use every time             |
+| §04 Structure & Formatting                 | Headings, lists, steps, links, images, and more    |
+| §05 Document Types & Templates             | Starter templates and where our docs live          |
+| §06 Language & Grammar                     | Voice, tone, word choice, punctuation, and numbers |
+| §07 Accessibility                          | Making docs work for everyone                      |
+| §08 Inclusive Language                     | Writing that welcomes every reader                 |
+| §09 Writing for Non-Native English Readers | Clear writing that translates well                 |
+| §10 Sensitive Information                  | What never goes in docs                            |
+| §11 Using AI Tools to Write Docs           | When and how to use AI for docs                    |
+| §12 Contributing, Review & Maintenance     | How docs (and this guide) stay up to date          |
+| §13 Resources                              | References, tools, and further reading             |
 
 > **Customize (A8):** Remove rows for sections you skipped.
 

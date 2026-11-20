@@ -1,10 +1,5 @@
 ---
 title: "12 - Contributing, Review & Maintenance"
-dateCreated: 2026-11-13
-status: draft-2026
-tags:
-  - theme/writing
-  - theme/craft
 ---
 # 12 - Contributing, review & maintenance
 

@@ -1,10 +1,5 @@
 ---
 title: "08 - Inclusive Language"
-dateCreated: 2026-11-13
-status: draft-2026
-tags:
-  - theme/writing
-  - theme/craft
 ---
 # 08 - Inclusive language
 

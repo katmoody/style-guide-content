@@ -1,9 +1,5 @@
 ---
 title: "00 - How to Use This Template"
-dateCreated: Friday, August 8th 2025, 10:59:05 am
-dateModified: Friday, November 13th 2026, 4:46:44 pm
-tags: []
-status: draft-2026
 ---
 # 00 - How to use this template
 

@@ -1,10 +1,5 @@
 ---
 title: "09 - Writing for Non-Native English Readers"
-dateCreated: 2026-04-25
-tags:
-  - theme/writing
-  - theme/language
-status: draft-2026
 ---
 # 09 - Writing for non-native English readers
 

@@ -190,7 +190,7 @@ parts:
         title: Sensitive Information
         recommended: now
       - id: '11'
-        title: Using AI Writing Tools
+        title: Using AI tools to write docs
       - id: '12'
         title: Contributing, Review & Maintenance
       - id: '13'

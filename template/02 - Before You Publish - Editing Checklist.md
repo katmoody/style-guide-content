@@ -1,11 +1,5 @@
 ---
 title: "02 - Before You Publish - Editing Checklist"
-dateCreated: Friday, November 13th 2026, 11:52:40 am
-dateModified: Friday, November 13th 2026, 4:46:53 pm
-status: draft-2026
-tags:
-  - theme/writing
-  - theme/craft
 ---
 # 02 - Before you publish: editing checklist
 

@@ -1,14 +1,13 @@
 ---
-title: "11 - Using AI Writing Tools"
-dateCreated: 2026-11-13
-status: draft-2026
-tags:
-  - theme/writing
-  - theme/craft
+title: "11 - Using AI tools to write docs"
 ---
-# 11 - Using AI writing tools
+# 11 - Using AI tools to write docs
 
-AI tools can help you draft, edit, and summarize faster. They can also make things up, sound confident about it, and leak information you didn't mean to share. These rules keep the speed and lose the risk.
+This section covers using AI tools while you write, edit, or review [our docs from A5]: drafting, tightening, summarizing, and checking against this guide.
+
+It isn't a general AI policy. For how the company uses AI overall, see [company AI policy, if you have one]. And if you're *documenting* an AI tool your team uses, that's a regular doc. Follow the rest of this guide.
+
+AI tools can make writing faster. They can also make things up, sound confident about it, and leak information you didn't mean to share. These rules keep the speed and lose the risk.
 
 > **Template note:** Notes like this are instructions for whoever sets up the guide. **Delete them before you publish.** (How to customize: §00.)
 

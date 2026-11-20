@@ -1,9 +1,5 @@
 ---
 title: "07 - Accessibility"
-dateCreated: 2026-04-25
-tags:
-  - theme/writing
-status: draft-2026
 ---
 # 07 - Accessibility
 

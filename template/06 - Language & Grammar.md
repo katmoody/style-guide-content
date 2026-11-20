@@ -1,11 +1,5 @@
 ---
 title: "06 - Language & Grammar"
-dateCreated: Tuesday, March 28th 2023, 7:08:20 pm
-dateModified: Friday, November 13th 2026, 4:48:48 pm
-tags:
-  - theme/writing
-  - theme/language
-status: draft-2026
 ---
 # 06 - Language & grammar
 

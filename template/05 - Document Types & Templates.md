@@ -1,11 +1,5 @@
 ---
 title: "05 - Document Types & Templates"
-dateCreated: Friday, November 13th 2026, 11:52:40 am
-dateModified: Friday, November 13th 2026, 4:47:03 pm
-status: draft-2026
-tags:
-  - theme/writing
-  - theme/craft
 ---
 # 05 - Document types & templates
 

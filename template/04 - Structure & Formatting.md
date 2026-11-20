@@ -1,11 +1,5 @@
 ---
 title: "04 - Structure & Formatting"
-dateCreated: Tuesday, March 28th 2023, 7:07:58 pm
-dateModified: Friday, November 13th 2026, 4:47:00 pm
-tags:
-  - theme/writing
-  - theme/craft
-status: draft-2026
 ---
 # 04 - Structure & formatting
 
