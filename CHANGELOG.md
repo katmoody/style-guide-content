@@ -23,7 +23,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Clarified the scope of §11: it covers using AI tools to write docs, not general AI policy, and its title is now "Using AI tools to write docs." 
 - Removed internal editing metadata (tags, status, and dates) from the section files. Only `title` remains.
 
-## [1.0.0] - 2026-11-14
+## [1.0.0] - 2026-11-15
 
 ### Added
 
